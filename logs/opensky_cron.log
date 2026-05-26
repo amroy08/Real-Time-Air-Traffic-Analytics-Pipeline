@@ -1,0 +1,23 @@
+/Users/amroy/Desktop/air-traffic-pipeline/air-traffic-pipeline/venv/lib/python3.13/site-packages/google/cloud/bigquery/_pandas_helpers.py:486: FutureWarning: Loading pandas DataFrame into BigQuery will require pandas-gbq package version 0.26.1 or greater in the future. Tried to import pandas-gbq and got: No module named 'pandas_gbq'
+  warnings.warn(
+Fetching OpenSky data...
+API response time: 1779716545
+Aircraft rows received from API: 238
+
+Sample data:
+                    ingestion_time  ...   aircraft_location_wkt
+0 2026-05-25 13:42:42.110496+00:00  ...   POINT(77.1059 28.542)
+1 2026-05-25 13:42:42.110496+00:00  ...  POINT(76.9387 29.3086)
+2 2026-05-25 13:42:42.110496+00:00  ...  POINT(87.5656 26.0372)
+3 2026-05-25 13:42:42.110496+00:00  ...  POINT(87.6911 22.5969)
+4 2026-05-25 13:42:42.110496+00:00  ...   POINT(78.504 26.6622)
+
+[5 rows x 24 columns]
+Saved CSV: data/opensky_india_20260525_191242.csv
+Total records saved: 238
+
+Loading data to BigQuery...
+Loaded 238 rows into BigQuery table: gen-lang-client-0534643658.air_traffic_analytics.fact_aircraft_states
+Total rows currently in table: 687
+
+Pipeline completed successfully.
